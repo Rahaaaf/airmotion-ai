@@ -13,7 +13,7 @@ class GestureRecognizer:
             raise FileNotFoundError("Train the Neural Network first.")
 
         self.model = tf.keras.models.load_model(MODEL_PATH)
-        self.classes = np.load(CLASSES_PATH, allow_pickle=True).tolist()
+        self.classes = np.load(CLASSES_PATH, allow_pickle=False).tolist()
 
     def predict(self, window):
         data = np.asarray(window, dtype=np.float32)
