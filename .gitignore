@@ -1,0 +1,18 @@
+# AirMotion AI
+
+This project is prepared for temporary local testing and for GitHub Codespaces.
+
+```text
+__pycache__/
+.venv/
+venv/
+node_modules/
+.env
+.DS_Store
+*.pyc
+*.pyo
+*.keras
+*.npy
+*.db
+*.sqlite3
+```
